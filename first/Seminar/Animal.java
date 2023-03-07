@@ -11,9 +11,9 @@ public class Animal {
     }
 
 
-    // public String getModel() {
-    //     return model;
-    // }
+    public String getModel() {
+        return model;
+    }
 
     public void setModel(String model) {
         this.model = model;
@@ -22,6 +22,10 @@ public class Animal {
     @Override
     public String toString() {
         return this.model;
+    }
+
+    public String voice(){
+        return "Животное говорит";
     }
 }
 
