@@ -6,6 +6,9 @@ public class Node {
         this.p2 = p2;
     }
 
+    public Node(String string, Relationship parent, String string2) {
+    }
+
     Person p1;
     Relationship re;
     Person p2;

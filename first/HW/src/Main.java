@@ -25,13 +25,18 @@ public class Main {
         Person jane = new Person("Женя");
         Person ivan = new Person("Ваня");
         GeoTree gt = new GeoTree();
-        gt.append(irina, vasya);
-        gt.append(irina, masha);
-        gt.append(vasya, jane);
-        gt.append(vasya, ivan);
+        gt.append(irina, vasya, Relationship.parent);
+        gt.append(irina, masha, Relationship.parent);
+        gt.append(masha, vasya, Relationship.brotherOrSister);
+        gt.append(vasya, jane, Relationship.parent);
+        gt.append(vasya, ivan, Relationship.parent);
+        gt.append(jane, ivan, Relationship.brotherOrSister);
+        //gt.checkSiblings(irina, Relationship.parent);
 
         System.out.println(new Reserch(gt).spend(irina,
-                Relationship.parentI));
+                Relationship.parent));
+        System.out.println(new Reserch(gt).spend(vasya,
+                Relationship.brotherOrSister));
     }
 
 }
