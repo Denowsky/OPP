@@ -1,6 +1,11 @@
 public enum Relationship {
-    parent,
+    father,
+    mother,
+    son,
+    daughter,
     children,
-    brotherOrSister
+    sibling,
+    brother,
+    sister
 
 }
