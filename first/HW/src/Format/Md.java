@@ -3,7 +3,7 @@ package Format;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import LDocument.TextDocument;
+import Document.TextDocument;
 
 public class Md extends TextFormat {
 
