@@ -17,6 +17,10 @@
  но совершенно не знаем прабабушку - как хранить такие связи или что будет если в компоненту обхода передать ссылку 
  на null-дерево.*/
 
+ import Applications.Notepad;
+ import Format.*;
+ 
+
 public class Main {
     public static void main(String[] args) {
         Person irina = new Person("Ирина", "female");
@@ -43,6 +47,14 @@ public class Main {
         System.out.println(cat.voice());
         Person.voice(masha, "Шкаф");
 
+        Notepad notes = new Notepad();
+        notes.newFile();
+        notes.currentDocument().addAllText("text1");
+        notes.currentDocument().addAllText("text2");
+        notes.currentDocument().addAllText("text3");
+        notes.SaveAs("file1", new Txt());
+        notes.SaveAs("file2", new Md());
+        notes.SaveAs("file3", new Doc());
     }
 
 }
