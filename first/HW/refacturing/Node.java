@@ -1,4 +1,4 @@
-
+package first.HW.refacturing;
 
 public class Node {
 
@@ -17,7 +17,7 @@ public class Node {
 
     @Override
     public String toString() {
-        return String.format("<%s %s %s>", p1, re, p2);
+        return String.format("<%s %s %s>", p1.name, re, p2.name);
     }
 
 }
