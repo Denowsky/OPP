@@ -23,6 +23,8 @@ public class Main {
         System.out.println(gt.getTree());
         System.out.println(roman.voice());
         System.out.println(maria.voice());
+        System.out.println(roman.actionToPerson(boris));
+        System.out.println(boris.actionToPerson(maria));
         System.out.println(roman.actionToFurniture(locker));
 
         Notepad notes = new Notepad();

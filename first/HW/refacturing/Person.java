@@ -26,7 +26,7 @@ public abstract class Person {
     }
 
     protected String actionToPerson(Person p2){
-        return this.name + " приветствует " + p2;
+        return this.name + " приветствует " + p2.name;
     }
 
     protected String actionToFurniture(Furniture l1){

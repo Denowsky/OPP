@@ -7,7 +7,6 @@ public class OppositeGen {
     oppositesex.put(Relationship.husband, Relationship.wife);
     oppositesex.put(Relationship.father, Relationship.mother);
     oppositesex.put(Relationship.brother, Relationship.sister);
-    oppositesex.put(Relationship.grandpa, Relationship.grandma);
    }
 
     public HashMap<Relationship, Relationship> getOppositesex() {
