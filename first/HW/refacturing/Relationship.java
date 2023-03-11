@@ -1,5 +1,3 @@
-package first.HW.refacturing;
-
 public enum Relationship {
     father,
     mother,

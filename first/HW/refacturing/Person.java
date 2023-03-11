@@ -1,5 +1,3 @@
-package first.HW.refacturing;
-
 public abstract class Person {
     String name;
     private int age;
@@ -25,5 +23,13 @@ public abstract class Person {
 
     public String voice(){
         return "говорит";
+    }
+
+    protected String actionToPerson(Person p2){
+        return this.name + " приветствует " + p2;
+    }
+
+    protected String actionToFurniture(Furniture l1){
+        return this.name + " пытается открыть " + l1.model +" "+l1.name;
     }
 }

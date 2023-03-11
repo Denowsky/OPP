@@ -1,5 +1,3 @@
-package first.HW.refacturing;
-
 public class Man extends Person{
 
     public Man(String name, int age) {

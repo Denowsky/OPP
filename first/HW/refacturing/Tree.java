@@ -1,5 +1,3 @@
-package first.HW.refacturing;
-
 import java.util.ArrayList;
 
 public class Tree {
@@ -12,15 +10,32 @@ public class Tree {
         return tree;
     }
 
-    public void append(Person person1, Person person2, Relationship re) {
-        opSex.setKeys();
-        if(person1.sex==Gender.male){
-            tree.add(new Node(person1, re, person2));
-            tree.add(new Node(person2, opSex.getOppositesex().get(re), person1));
+    public Relationship child(Gender sex) {
+        if(sex==Gender.male){
+            return Relationship.son;
         }
         else{
-            tree.add(new Node(person1, opSex.getOppositesex().get(re), person2));
-            tree.add(new Node(person2, re, person1));
+            return Relationship.daughter;
+        }
+    }
+
+    public void append(Person person1, Person person2, Relationship re) {
+        opSex.setKeys();
+        if(re == Relationship.father || re == Relationship.mother){
+            if(person1.sex == Gender.male)
+            {
+                tree.add(new Node(person1, re, person2));
+                tree.add(new Node(person2, child(person2.sex), person1));
+            }
+            else{
+                tree.add(new Node(person1, opSex.oppositesex.get(re), person2));
+                tree.add(new Node(person2, child(person2.sex), person1));
+            }
+        }
+        else{
+            tree.add(new Node(person1, re, person2));
+            tree.add(new Node(person2, opSex.oppositesex.get(re), person1));
         }
 }
 }
+    

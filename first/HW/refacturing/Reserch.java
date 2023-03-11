@@ -1,5 +1,3 @@
-package first.HW.refacturing;
-
 import java.util.ArrayList;
 
 public class Reserch {

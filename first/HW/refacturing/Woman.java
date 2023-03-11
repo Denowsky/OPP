@@ -1,5 +1,3 @@
-package first.HW.refacturing;
-
 public class Woman extends Person{
 
     public Woman(String name, int age) {
@@ -10,6 +8,6 @@ public class Woman extends Person{
     @Override
     public String voice() {
         // TODO Auto-generated method stub
-        return this.name + "сказала";
+        return this.name + " сказала";
     }
 }
