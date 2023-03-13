@@ -1,5 +1,10 @@
-public abstract class Person {
-    String name;
+package Tree.People;
+
+import Tree.CanTalk;
+import Tree.Furniture.Furniture;
+
+public abstract class Person implements CanTalk{
+    public String name;
     private int age;
     public Gender sex;
 
@@ -21,15 +26,12 @@ public abstract class Person {
         return name;
     }
 
-    public String voice(){
-        return "говорит";
-    }
 
-    protected String actionToPerson(Person p2){
+    public String actionToPerson(Person p2){
         return this.name + " приветствует " + p2.name;
     }
 
-    protected String actionToFurniture(Furniture l1){
+    public String actionToFurniture(Furniture l1){
         return this.name + " пытается открыть " + l1.model +" "+l1.name;
     }
 }

@@ -1,3 +1,5 @@
+package Tree.People;
+
 public enum Relationship {
     father,
     mother,

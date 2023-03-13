@@ -1,3 +1,5 @@
+package Tree.People;
+
 import java.util.HashMap;
 
 public class OppositeGen {

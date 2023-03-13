@@ -1,6 +1,8 @@
+package Tree.Furniture;
+
 public abstract class Furniture {
-    String name;
-    String model;
+    public String name;
+    public String model;
     String material;
     
     public Furniture(String name, String model, String material) {

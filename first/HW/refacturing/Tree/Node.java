@@ -1,3 +1,8 @@
+package Tree;
+
+import Tree.People.Person;
+import Tree.People.Relationship;
+
 public class Node {
 
     public Node(Person p1, Relationship re, Person p2) {
