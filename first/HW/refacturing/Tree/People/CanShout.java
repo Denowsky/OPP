@@ -1,4 +1,4 @@
-package Tree;
+package Tree.People;
 
 public interface CanShout {
     

@@ -1,6 +1,5 @@
 package Tree.People;
 
-import Tree.CanTalk;
 import Tree.Furniture.Furniture;
 
 public abstract class Person implements CanTalk{
