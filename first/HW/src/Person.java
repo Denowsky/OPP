@@ -18,7 +18,7 @@ public class Person {
     }
 
     public static void voice(Person person, String subject) {
-        if(person.gender=="male" && subject=="шкаф"){
+        if(person.gender=="male" && subject=="Шкаф"){
             System.out.println(person.fullName + " сказал проверить шкаф:");
             System.out.println("-В последний раз он видел пиджак там");
         }
