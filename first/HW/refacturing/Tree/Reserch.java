@@ -3,8 +3,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import Tree.People.Person;
-import Tree.People.Relationship;
+import People.Person;
+import People.Relationship;
 
 public class Reserch {
     ArrayList<String> result = new ArrayList<>();

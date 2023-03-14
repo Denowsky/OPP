@@ -1,13 +1,20 @@
+import java.util.Random;
+
+import Animals.Animal;
+import Animals.Cat;
+import Animals.Chameleon;
+import Animals.Classification;
+import Animals.Penguin;
 import Applications.Notepad;
 import Format.*;
 import Tree.Reserch;
 import Tree.Tree;
-import Tree.Furniture.Furniture;
-import Tree.Furniture.Lockers;
-import Tree.People.Man;
-import Tree.People.Person;
-import Tree.People.Relationship;
-import Tree.People.Woman;
+import Furniture.Furniture;
+import Furniture.Lockers;
+import People.Man;
+import People.Person;
+import People.Relationship;
+import People.Woman;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +23,9 @@ public class Main {
         Person anna = new Woman("Анна", 12);
         Person boris = new Man("Борис", 10);
         Furniture locker = new Lockers("Старый шкаф", "Закрывающийся на замок", "Деревянный");
+        Animal cat = new Cat("Джек", Classification.mammal, "Рыжий");
+        Animal peng = new Penguin("Пенгвин", Classification.bird, "пингвиновый");
+        Animal cham = new Chameleon("Хам", Classification.reptile,"Разный");
         Tree gt = new Tree();
         gt.append(roman, maria, Relationship.husband);
         gt.append(roman, boris, Relationship.father);
@@ -32,7 +42,7 @@ public class Main {
         System.out.println(roman.voice("выделить время на поход в кино"));
         System.out.println(maria.voice("купить молочка"));
         System.out.println(boris.shout("хочу чипсов!"));
-        System.out.println(anna.shout("а я хочу сникерсов!"));
+        System.out.println(anna.shout("а я не понимаю, что нужно делать, чтобы получить оценку выше \"удовлетворительно!\""));
         System.out.println(roman.actionToPerson(boris));
         System.out.println(boris.actionToPerson(maria));
         System.out.println(roman.actionToFurniture(locker));

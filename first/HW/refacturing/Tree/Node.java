@@ -1,7 +1,7 @@
 package Tree;
 
-import Tree.People.Person;
-import Tree.People.Relationship;
+import People.Person;
+import People.Relationship;
 
 public class Node {
 

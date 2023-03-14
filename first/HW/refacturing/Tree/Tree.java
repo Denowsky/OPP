@@ -1,10 +1,10 @@
 package Tree;
 import java.util.ArrayList;
 
-import Tree.People.Gender;
-import Tree.People.OppositeGen;
-import Tree.People.Person;
-import Tree.People.Relationship;
+import People.Gender;
+import People.OppositeGen;
+import People.Person;
+import People.Relationship;
 
 public class Tree {
     

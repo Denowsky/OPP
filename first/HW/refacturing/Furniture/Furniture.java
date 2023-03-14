@@ -1,4 +1,4 @@
-package Tree.Furniture;
+package Furniture;
 
 public abstract class Furniture {
     public String name;

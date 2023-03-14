@@ -1,4 +1,5 @@
-package Tree.People;
+package People;
+
 public class Woman extends Person{
 
     public Woman(String name, int age) {

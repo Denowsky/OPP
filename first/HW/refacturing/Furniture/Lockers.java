@@ -1,4 +1,4 @@
-package Tree.Furniture;
+package Furniture;
 
 public class Lockers extends Furniture{
 

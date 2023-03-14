@@ -1,4 +1,4 @@
-package Tree.People;
+package People;
 
 public enum Relationship {
     father,

@@ -1,4 +1,4 @@
-package Tree.People;
+package People;
 
 import java.util.HashMap;
 

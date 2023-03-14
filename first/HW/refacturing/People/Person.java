@@ -1,6 +1,7 @@
-package Tree.People;
+package People;
 
-import Tree.Furniture.Furniture;
+
+import Furniture.Furniture;
 
 public abstract class Person implements CanTalk{
     public String name;

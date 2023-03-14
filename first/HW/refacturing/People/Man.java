@@ -1,4 +1,4 @@
-package Tree.People;
+package People;
 
 public class Man extends Person{
 
