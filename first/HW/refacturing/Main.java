@@ -42,7 +42,7 @@ public class Main {
         System.out.println(roman.voice("выделить время на поход в кино"));
         System.out.println(maria.voice("купить молочка"));
         System.out.println(boris.shout("хочу чипсов!"));
-        System.out.println(anna.shout("а я не понимаю, что нужно делать, чтобы получить оценку выше \"удовлетворительно!\""));
+        System.out.println(anna.shout("не важно, что я кричу - оценка будет удовлетворительная"));
         System.out.println(roman.actionToPerson(boris));
         System.out.println(boris.actionToPerson(maria));
         System.out.println(roman.actionToFurniture(locker));
@@ -53,6 +53,9 @@ public class Main {
         notes.SaveAs("file1", new Txt());
         notes.SaveAs("file2", new Md());
         notes.SaveAs("file3", new Doc());
+
+        
+
     }
     
 }
