@@ -1,6 +1,6 @@
 package Animals;
 
-public abstract class Animal implements Comparable{
+public abstract class Animal{
     String name;
     Classification kind;
     String color;
@@ -51,9 +51,8 @@ public abstract class Animal implements Comparable{
         return name;
     }
 
-    @Override
-    public int compareTo(Object arg0) {
-        // 1.25
-        return 0;
-    }
+    // @Override
+    // public int compareTo(Animal arg0) {
+    //     return this.getAge()-arg0.getAge();
+    // }
 }

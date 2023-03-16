@@ -17,7 +17,7 @@ public class Reserch {
 
     public String FindLovedOnes(Person p, Relationship re) {
         for (Node t : tree) {
-            if (t.p1.name == p.name && t.re == re) {
+            if (t.p1.name.equals(p.name) && t.re.equals(re)) {
                 result.add(t.p2.name);
             }
         }
@@ -25,14 +25,14 @@ public class Reserch {
     }
 
     public String FindElderThan( String operand,Integer age) {
-        if(operand=="<" || operand==">"){
+        if(operand.equals("<") || operand.equals(">")){
             for (Node t: tree){
-                if(operand==">"){
+                if(operand.equals(">")){
                     if(t.p1.getAge()>(age)){
                         ageResult.add(t.p1.name);
                     }
                 }
-                else if(operand=="<"){
+                else if(operand.equals("<")){
                     if(t.p1.getAge()<(age)){
                         ageResult.add(t.p1.name);
                 }

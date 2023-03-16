@@ -6,6 +6,7 @@ import java.util.Random;
 
 import Animals.Animal;
 import Animals.AnimalAgeComparator;
+import Animals.AnimalNameComparator;
 import Animals.Cat;
 import Animals.Chameleon;
 import Animals.Classification;
@@ -73,7 +74,8 @@ public class Main {
         zoo.add(cham);
         Collections.sort(zoo, new AnimalAgeComparator());
         System.out.println(zoo);
-
+        Collections.sort(zoo, new AnimalNameComparator());
+        System.out.println(zoo);
 
         Notepad notes = new Notepad();
         notes.newFile();
