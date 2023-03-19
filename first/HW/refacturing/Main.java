@@ -82,7 +82,7 @@ public class Main {
         notes.currentDocument().addAllText("text1");
         notes.SaveAs("file1", new Txt());
         notes.SaveAs("file2", new Md());
-        notes.SaveAs("file3", new Doc());
+        notes.SaveAs("file3", new CSV());
 
 
 

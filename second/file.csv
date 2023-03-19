@@ -1,0 +1,25 @@
+<CSV Format>
+id: 1
+priority: immediate
+task: Создать класс "Task"
+when created: 2023-03-19T17:05:17.364006800
+executer: Джава Задача Решалович
+deadline: 2023-03-18
+
+
+id: 2
+priority: medium
+task: Создать компоненту хранения данных
+when created: 2023-03-19T17:05:17.364006800
+executer: Чан Джеки Шанхайевич
+deadline: 2023-03-19
+
+
+id: 3
+priority: low
+task: Создать компоненту импорта и экспорта файла или в файл
+when created: 2023-03-19T17:05:17.364006800
+executer: Гослинг Райан Водилович
+deadline: 2023-03-20
+
+
