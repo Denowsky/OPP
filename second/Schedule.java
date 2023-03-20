@@ -3,7 +3,7 @@ package second;
 import java.util.ArrayList;
 
 public class Schedule {
-    ArrayList<Task> table = new ArrayList<>();
+    private ArrayList<Task> table = new ArrayList<>();
 
     public ArrayList<Task> getTable() {
         return table;

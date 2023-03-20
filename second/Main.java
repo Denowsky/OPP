@@ -2,8 +2,9 @@ package second;
 
 import Applications.Notepad;
 import Format.CSV;
+import second.Menu;
 
-public class Main {    
+public class Main{    
 public static void main(String[] args) {
 
     Person guyOne = new Person("Джава", "Задача", "Решалович");
@@ -17,6 +18,7 @@ public static void main(String[] args) {
     table.append(first);
     table.append(second);
     table.append(third);
+    Menu.createTask(table, guyOne);
 
     Notepad notes = new Notepad();
     notes.newFile();
