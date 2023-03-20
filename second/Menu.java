@@ -19,7 +19,7 @@ public static void createTask(Schedule tb1, Person p1) {
             System.out.println("Введите название задачи: ");
             Scanner scan1 = new Scanner(System.in);
             String task = scan1.nextLine();
-            System.out.println("Выберите уровень приоритета: ");
+            System.out.println("Выберите уровень приоритета(1, 2 или 3): ");
             Scanner scan2 = new Scanner(System.in);
             Priority level;
             switch (scan2.nextInt()){
