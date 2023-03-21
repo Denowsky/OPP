@@ -1,9 +1,5 @@
-package Document;
+package third.SaveTo.Document;
 
-import java.util.ArrayList;
-
-import second.Schedule;
-import second.Task;
 import third.Adressbook;
 
 public class TextDocument {
@@ -29,10 +25,10 @@ public class TextDocument {
         }
     }
 
-    public void addAllTasks(Schedule t1) {
-        for (int index = 0; index < t1.getTable().size(); index++) {
-            addAllText(t1.getTable().get(index).toString());
-            addAllText("\n");
+    public void addAllregisters(Adressbook ab) {
+        for (int index = 0; index < ab.getAdressbook().size(); index++) {
+            addAllText(ab.getAdressbook().get(index).toString());
+            // addAllText("\n");
         }
     }
 
