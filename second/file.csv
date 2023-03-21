@@ -2,7 +2,7 @@
 id: 1
 priority: immediate
 task: Создать класс "Task"
-when created: 2023-03-20T16:34:36.070230
+when created: 2023-03-20T19:36:06.227733100
 executer: Джава Задача Решалович
 deadline: 2023-03-18
 
@@ -10,7 +10,7 @@ deadline: 2023-03-18
 id: 2
 priority: medium
 task: Создать компоненту хранения данных
-when created: 2023-03-20T16:34:36.070471
+when created: 2023-03-20T19:36:06.227733100
 executer: Чан Джеки Шанхайевич
 deadline: 2023-03-19
 
@@ -18,16 +18,16 @@ deadline: 2023-03-19
 id: 3
 priority: low
 task: Создать компоненту импорта и экспорта файла или в файл
-when created: 2023-03-20T16:34:36.070521
+when created: 2023-03-20T19:36:06.227733100
 executer: Гослинг Райан Водилович
 deadline: 2023-03-20
 
 
-id: 4
+id: 5
 priority: low
-task: Курить план
-when created: 2023-03-20T16:34:54.182508
+task: �������� project zomboid
+when created: 2023-03-20T19:37:00.289211900
 executer: Джава Задача Решалович
-deadline: 2023-03-20
+deadline: 2023-03-21
 
 

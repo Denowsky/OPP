@@ -65,9 +65,13 @@ public static void setCounter(Integer counter) {
     Register.counter = counter;
 }
 
-
 @Override
 public String toString() {
-    return String.format("ID: %s\nФИО: %s\nНомер телефона: %s\nАдрес: %s\n", id, who, number, adress);
+    return String.format("ID: %s, ФИО: %s, Номер телефона: %s, Адрес: %s\n", id, who, number, adress);
+}
+
+
+public String toStringAnother() { 
+return String.format("ID: %s\nФИО: %s\nНомер телефона: %s\nАдрес: %s\n", id, who, number, adress); 
 }
 }

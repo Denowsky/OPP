@@ -21,24 +21,21 @@ public class TextDocument {
     public void addAllLines(String[] lines){
         for (String line : lines) {
             addAllText(line);
-            //sb.append(line);
         }
     }
 
-    public void addAllregisters(Adressbook ab) {
+    public void addAllregistersVarOneLine(Adressbook ab) {
         for (int index = 0; index < ab.getAdressbook().size(); index++) {
             addAllText(ab.getAdressbook().get(index).toString());
-            // addAllText("\n");
         }
     }
 
-    // public void addAllText(String ... data){
-    //     for (String line : data) {
-    //         sb.append(line);
-    //         //addAllText(line);
-    //     }
-    // }
-    
+    public void addAllregistersVarFourLine(Adressbook ab) {
+        for (int index = 0; index < ab.getAdressbook().size(); index++) {
+            addAllText(ab.getAdressbook().get(index).toStringAnother());
+        }
+    }
+
     public String getData(){
         return sb.toString();
     }

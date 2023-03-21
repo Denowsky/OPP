@@ -2,6 +2,7 @@ package third;
 
 import third.SaveTo.Applications.Notepad;
 import third.SaveTo.Format.CSV;
+import Document.TextDocument;
 import third.Menu;
 
 public class Main{    
@@ -23,11 +24,14 @@ public static void main(String[] args) {
     ab.append(regOne);
     ab.append(regTwo);
     ab.append(regThree);
-    // Menu.addRegister(ab);
+    Menu.addRegister(ab);
 
     Notepad notes = new Notepad();
     notes.newFile();
-    notes.currentDocument().addAllregisters(ab);
-    notes.SaveAs("third/SavedFiles/file", new CSV());
+    notes.currentDocument().addAllregistersVarOneLine(ab);
+    notes.SaveAs("third/file1", new CSV());
+    notes.newFile();
+    notes.currentDocument().addAllregistersVarFourLine(ab);
+    notes.SaveAs("third/file2", new CSV());
     }
 }
