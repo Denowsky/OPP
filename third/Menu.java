@@ -10,8 +10,8 @@ public class Menu {
 public static void addRegister(Adressbook tb1) {
     active = true;
     while(active!=false){
-        String scan = addScan("Создать новую запись? y/n:");
-        if(scan.equals("n")){
+        String scan = addScan("Создать новую запись? д/н:");
+        if(scan.equals("н")){
             active = false;
         }
         else{
@@ -27,10 +27,9 @@ public static void addRegister(Adressbook tb1) {
             String pnumber = addScan("Введите номер телефона без 8(10 цифр): ");
             PhoneNumber number = new PhoneNumber(pnumber);
             Register newreg = new Register(adress, person, number);
-            String scan2 = addScan("Сохранить запись? y/n:");
-            if(scan2.equals("y")){
+            String scan2 = addScan("Сохранить запись? д/н:");
+            if(scan2.equals("д")){
                     tb1.append(newreg);
-                    active = false;
             }
         }
     }

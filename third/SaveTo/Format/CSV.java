@@ -19,4 +19,4 @@ public class CSV extends TextFormat {
         }
     }
 
-}
+    }
