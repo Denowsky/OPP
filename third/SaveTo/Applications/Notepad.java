@@ -1,7 +1,5 @@
 package third.SaveTo.Applications;
 
-import java.io.IOException;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,14 +28,4 @@ public class Notepad {
         format.SaveAs(documents.get(index), path);
     }
 
-    public void ReadData(String path) throws IOException{
-
-            PrintStream fileOut = new PrintStream(
-                 path + ".csv");
-            fileOut.println(10.5);
-            fileOut.printf(
-                  "%s - %d - %f", "hi", 10, 1.1);
-            fileOut.close();
-
-    }
 }
