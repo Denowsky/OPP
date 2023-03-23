@@ -27,6 +27,7 @@ public static void main(String[] args) throws IOException {
     Menu.addRegister(ab);
     
     Notepad notes = new Notepad();
+    notes.readData("third/file1");
     notes.newFile();
     notes.currentDocument().addAllregistersVarOneLine(ab);
     notes.SaveAs("third/file1", new CSV());
