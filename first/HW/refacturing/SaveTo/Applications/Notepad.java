@@ -27,4 +27,7 @@ public class Notepad {
     public void SaveAs(String path, TextFormat format) {
         format.SaveAs(documents.get(index), path);
     }
+
+    public Notepad readData(String string) {
+    }
 }
