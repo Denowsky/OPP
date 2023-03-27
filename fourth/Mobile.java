@@ -3,37 +3,37 @@ package fourth;
 public class Mobile extends Phone implements HasTouchScreen, Pocketable{
 
     public Mobile(String model) {
-        super(model);
+        super("Мобильный телефон: " + model);
     }
 
     @Override
-    public void Ringing() {
-        System.out.println(ring);
+    public String Ringing() {
+        return ring;
     }
 
     @Override
-    public void display() {
-        System.out.println(screen + " диагональю 6,5 дюймов");
+    public String display() {
+        return screen + " диагональю 6,5 дюймов";
     }
 
     @Override
-    public void buttons() {
-        System.out.println(keys + " включения, изменения уровня звука");
+    public String buttons() {
+       return keys + ": включения и изменения уровня звука";
     }
 
     @Override
-    public void touch() {
-        System.out.println(touchScreen + " с функцией мультитач");
+    public String touch() {
+        return touchScreen + " с функцией мультитач";
     }
 
     @Override
     public String pocketing() {
-        System.out.println(pocket);
+        return pocket;
     }
 
     @Override
     public String toString() {
-        return String.format("Модель:%s\nФункции:\n  *%s\n  *%s\n  *%s\n  *%s\n  *%s", this.getModel(), this.Ringing(), this.buttons(), this.display(), this.pocketing());
+        return String.format("%s\nФункции:\n  *%s\n  *%s\n  *%s\n  *%s\n  *%s", this.getModel(), this.Ringing(), this.display(), this.buttons(), this.touch(), this.pocketing());
     }
     
     

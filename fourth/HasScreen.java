@@ -3,6 +3,6 @@ package fourth;
 public interface HasScreen{
     String screen = "Есть дисплей";
 
-    public void display();
+    public String display();
         
 }
