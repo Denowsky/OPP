@@ -30,7 +30,7 @@ public static void addRegister(Adressbook tb1) {
             Adress adress = new Adress(city, street, building, appartment);
             String pnumber = addScan("Введите номер телефона без 8(10 цифр): ");
             PhoneNumber number = new PhoneNumber(pnumber);
-            String wnumber = addScan("Введите номер телефона без 8(10 цифр): ");
+            String wnumber = addScan("Введите рабочий номер без 8(10 цифр): ");
             PhoneNumber workNumber = new PhoneNumber(wnumber);
             Register newreg = new Register(adress, person, number, workNumber);
             String scan2 = addScan("Сохранить запись? д/н:");
@@ -55,10 +55,10 @@ public static void menuVariants(Notepad notes, Adressbook ab1) throws IOExceptio
             addRegister(ab1);
             menuVariants(notes, ab1);
         case "4":
-        break;
+            break;
         default:
-        System.out.println("Пункт меню не выбран, попробуйте ещё раз:");
-        menuVariants(notes, ab1);
+            System.out.println("Пункт меню не выбран, попробуйте ещё раз:");
+            menuVariants(notes, ab1);
     }
     
 }
