@@ -1,6 +1,6 @@
 package fourth;
 
-public class Mobile extends Phone implements HasTouchScreen, Pocketable{
+public class Mobile extends Phone implements HasTouchScreen, Pocketable, NeedSim{
 
     public Mobile(String model) {
         super("Мобильный телефон: " + model);
@@ -32,9 +32,13 @@ public class Mobile extends Phone implements HasTouchScreen, Pocketable{
     }
 
     @Override
-    public String toString() {
-        return String.format("%s\nФункции:\n  *%s\n  *%s\n  *%s\n  *%s\n  *%s", this.getModel(), this.Ringing(), this.display(), this.buttons(), this.touch(), this.pocketing());
+    public String sim() {
+        return simcard;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return String.format("%s\nХарактеристики:\n  *%s\n  *%s\n  *%s\n  *%s\n  *%s\n  *%s", this.getModel(), this.Ringing(), this.sim(), this.display(), this.buttons(), this.touch(), this.pocketing());
+    }
+        
 }

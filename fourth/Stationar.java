@@ -9,7 +9,7 @@ public class Stationar extends Phone implements HasWire{
 
     @Override
     public String wired() {
-        return wire + "спиральный, длинной 1,5 метра";
+        return wire + " спиральный, длина - 1,5 метра";
     }
 
     @Override
@@ -29,6 +29,6 @@ public class Stationar extends Phone implements HasWire{
 
     @Override
     public String toString() {
-        return String.format("%s\nФункции:\n  *%s\n  *%s\n  *%s\n  *%s", this.getModel(), this.Ringing(), this.display(), this.buttons(), this.wired());
+        return String.format("%s\nХарактеристики:\n  *%s\n  *%s\n  *%s\n  *%s", this.getModel(), this.Ringing(), this.display(), this.buttons(), this.wired());
     }
 }
