@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import third.SaveTo.Applications.Notepad;
-import third.View;
 
 
 public class Menu {
